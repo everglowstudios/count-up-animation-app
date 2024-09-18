@@ -13,7 +13,7 @@ body {
 header {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center content horizontally */
+    align-items: center;
     padding: 20px;
     background-color: #181818;
     position: fixed;
@@ -27,7 +27,7 @@ header {
     display: flex;
     align-items: center;
     width: 100%;
-    justify-content: center; /* Center items horizontally */
+    justify-content: center;
     margin-bottom: 10px;
 }
 
@@ -37,19 +37,19 @@ header {
 }
 
 .logo img {
-    width: 50px; /* Adjusted size for both desktop and mobile */
+    width: 50px;
     height: 50px;
     margin-right: 10px;
 }
 
 h1 {
-    font-size: 2em; /* Larger font size for desktop */
+    font-size: 2em;
     margin: 0;
 }
 
 nav.main-nav {
     display: flex;
-    justify-content: center; /* Center buttons horizontally */
+    justify-content: center;
     width: 100%;
 }
 
@@ -72,96 +72,55 @@ nav.main-nav a.button:hover {
 }
 
 main {
-    padding: 80px 20px 20px; /* Adjusted padding to make space for fixed header */
-    min-height: 100vh; /* Ensure full viewport height */
+    padding: 80px 20px 20px;
+    min-height: 100vh;
     display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
+    justify-content: center;
+    align-items: center;
 }
 
-.content-box {
-    background-color: rgba(0, 0, 0, 0.8); /* Black background */
-    padding: 20px;
-    border-radius: 15px;
-    max-width: 800px;
-    text-align: center;
-    margin: 20px; /* Add margin to prevent box from touching edges */
-}
-
-.content-box h2 {
-    font-size: 2em; /* Larger font size for desktop */
-    margin-bottom: 20px;
-}
-
-.content-box p {
-    font-size: 1.2em; /* Larger font size for desktop */
-    margin: 10px 0;
-}
-
-.terms-page {
-    text-align: center;
-    padding: 20px;
-}
-
-.terms-page h2 {
-    font-size: 2em; /* Larger font size for desktop */
-    margin-bottom: 20px;
-}
-
-.terms-page section {
-    background-color: rgba(0, 0, 0, 0.8); /* Black background */
-    padding: 20px;
-    border-radius: 15px;
-    max-width: 800px;
-    margin: 20px auto; /* Centered and spaced */
-    text-align: left; /* Align text to the left inside boxes */
-}
-
-.terms-page a.button {
-    background-color: rgba(255, 165, 0, 0.9);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    margin: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    box-shadow: 0 4px 8px rgba(255, 165, 0, 0.4);
-    transition: background-color 0.3s, box-shadow 0.3s;
-}
-
-.terms-page a.button:hover {
-    background-color: rgba(255, 165, 0, 1);
-    box-shadow: 0 6px 12px rgba(255, 165, 0, 0.6);
-}
-
-/* Contact Us Page Styles */
 .contact-page {
-    text-align: center;
-    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.contact-page h2 {
-    font-size: 2em; /* Larger font size for desktop */
+.contact-box {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-box h2 {
+    font-size: 2em;
     margin-bottom: 20px;
 }
 
-.contact-page p {
-    font-size: 1.2em; /* Larger font size for desktop */
+.contact-box p {
+    font-size: 1.2em;
     margin: 10px 0;
 }
 
-.contact-page .contact-form {
-    background-color: rgba(0, 0, 0, 0.8); /* Black background */
-    padding: 20px;
-    border-radius: 15px;
-    max-width: 800px;
-    margin: 20px auto; /* Centered and spaced */
-    text-align: left; /* Align text to the left inside the form */
+.contact-box a {
+    color: #ff8c00;
+    text-decoration: none;
 }
 
-.contact-page .contact-form input,
-.contact-page .contact-form textarea {
+.contact-box a:hover {
+    text-decoration: underline;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -171,7 +130,7 @@ main {
     color: #fff;
 }
 
-.contact-page .contact-form button {
+button[type="submit"] {
     background-color: rgba(255, 165, 0, 0.9);
     color: #fff;
     border: none;
@@ -183,7 +142,7 @@ main {
     transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-.contact-page .contact-form button:hover {
+button[type="submit"]:hover {
     background-color: rgba(255, 165, 0, 1);
     box-shadow: 0 6px 12px rgba(255, 165, 0, 0.6);
 }
@@ -204,70 +163,43 @@ main {
 /* Media Query for Mobile Devices */
 @media (max-width: 600px) {
     .header-left {
-        flex-direction: column; /* Stack logo and title vertically on mobile */
+        flex-direction: column;
         align-items: center;
     }
 
     .logo img {
-        width: 40px; /* Smaller logo for mobile */
+        width: 40px;
         height: 40px;
     }
 
     h1 {
-        font-size: 1.5em; /* Smaller heading for mobile */
+        font-size: 1.5em;
     }
 
     main {
-        padding: 80px 10px 20px; /* Adjusted padding to make space for fixed header */
+        padding: 80px 10px 20px;
     }
 
-    .content-box {
-        max-width: 100%; /* Full width for mobile */
-        margin: 10px; /* Reduced margin for mobile */
-        padding: 15px; /* Reduced padding for mobile */
+    .contact-box {
+        max-width: 100%;
+        margin: 10px;
+        padding: 15px;
     }
 
-    .content-box h2 {
-        font-size: 1.5em; /* Smaller heading for mobile */
+    .contact-box h2 {
+        font-size: 1.5em;
     }
 
-    .content-box p {
-        font-size: 1em; /* Smaller text for mobile */
+    .contact-box p {
+        font-size: 1em;
     }
 
-    .terms-page h2 {
-        font-size: 1.5em; /* Smaller heading for mobile */
+    .form-group input, .form-group textarea {
+        padding: 8px;
     }
 
-    .terms-page section {
-        padding: 10px; /* Reduced padding for mobile */
-        border-radius: 10px;
-    }
-
-    .terms-page a.button {
-        padding: 8px 16px; /* Smaller button padding */
-    }
-
-    .contact-page h2 {
-        font-size: 1.5em; /* Smaller heading for mobile */
-    }
-
-    .contact-page .contact-form {
-        padding: 10px; /* Reduced padding for mobile */
-        border-radius: 10px;
-    }
-
-    .contact-page .contact-form input,
-    .contact-page .contact-form textarea {
-        padding: 8px; /* Smaller padding for mobile */
-    }
-
-    .contact-page .contact-form button {
-        padding: 8px 16px; /* Smaller button padding for mobile */
+    button[type="submit"] {
+        padding: 8px 16px;
         margin: 10px 0;
-        /* Adjust button position slightly to the left */
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
     }
 }
