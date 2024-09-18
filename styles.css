@@ -79,6 +79,25 @@ main {
     align-items: center; /* Center content vertically */
 }
 
+.content-box {
+    background-color: rgba(0, 0, 0, 0.8); /* Black background */
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 800px;
+    text-align: center;
+    margin: 20px; /* Add margin to prevent box from touching edges */
+}
+
+.content-box h2 {
+    font-size: 2em; /* Larger font size for desktop */
+    margin-bottom: 20px;
+}
+
+.content-box p {
+    font-size: 1.2em; /* Larger font size for desktop */
+    margin: 10px 0;
+}
+
 .terms-page {
     text-align: center;
     padding: 20px;
@@ -149,12 +168,26 @@ main {
         padding: 80px 10px 20px; /* Adjusted padding to make space for fixed header */
     }
 
+    .content-box {
+        max-width: 100%; /* Full width for mobile */
+        margin: 10px; /* Reduced margin for mobile */
+        padding: 15px; /* Reduced padding for mobile */
+    }
+
+    .content-box h2 {
+        font-size: 1.5em; /* Smaller heading for mobile */
+    }
+
+    .content-box p {
+        font-size: 1em; /* Smaller text for mobile */
+    }
+
     .terms-page h2 {
         font-size: 1.5em; /* Smaller heading for mobile */
     }
 
     .terms-page section {
-        padding: 10px; /* Adjusted padding for mobile */
+        padding: 10px; /* Reduced padding for mobile */
         border-radius: 10px;
     }
 
