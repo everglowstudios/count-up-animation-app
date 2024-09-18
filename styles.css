@@ -47,89 +47,63 @@ header {
     background: #666;
 }
 
-/* Terms and Conditions Page */
-.terms-page {
+/* Contact Us Page */
+.contact-page {
     padding: 20px;
     max-width: 800px;
     margin: 0 auto;
 }
 
-.terms-container {
+.contact-container {
     background: #f9f9f9;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-h2 {
-    color: #333;
-}
-
-h3 {
-    color: #444;
-}
-
-ul {
-    margin: 10px 0;
-    padding: 0;
-    list-style: none;
-}
-
-ul li {
-    margin: 5px 0;
-}
-
-.contact-section {
-    margin-top: 20px;
-    padding: 15px;
-    background: #e0e0e0;
-    border-radius: 5px;
-}
-
-.contact-section h3 {
-    margin-top: 0;
-}
-
-.contact-section a {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.contact-section a:hover {
-    text-decoration: underline;
-}
-
-/* Home Page */
-.home-page {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center;    /* Center vertically */
-    height: 100vh;          /* Full height of the viewport */
-    background: #f0f0f0;    /* Light gray background */
-}
-
-.welcome-container {
-    display: flex;
-    justify-content: center; /* Center horizontally within the container */
-    align-items: center;     /* Center vertically within the container */
-    padding: 20px;
-}
-
-.welcome-box {
-    text-align: center;
-    background: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.welcome-box h2 {
-    margin-top: 0;
+.contact-container h2 {
     color: #333;
+    margin-bottom: 20px;
 }
 
-.welcome-box p {
-    color: #555;
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    color: #444;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    resize: vertical; /* Allows vertical resizing */
+    min-height: 150px;
+}
+
+.contact-form button {
+    background: #555;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: #666;
 }
 
 /* Responsive Adjustments */
@@ -145,7 +119,7 @@ ul li {
         display: block;
         margin-bottom: 5px;
     }
-    .welcome-box {
+    .contact-container {
         padding: 15px;
     }
 }
