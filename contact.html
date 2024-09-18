@@ -5,6 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .contact-box {
+            width: 50%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-box p {
+            margin: 10px 0;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .contact-box a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -25,11 +51,14 @@
 
     <main class="contact-page">
         <h2>Contact Us</h2>
-        <p>Feel free to reach out to us through the following methods:</p>
-        <p>Email: <a href="mailto:everglowstudios@proton.me">everglowstudios@proton.me</a></p>
-        <p>Instagram: <a href="https://www.instagram.com/everglowstudios" target="_blank">@everglowstudios</a></p>
+        <div class="contact-box">
+            <p>Email: <a href="mailto:everglowstudios@proton.me">everglowstudios@proton.me</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/everglowstudios" target="_blank">@everglowstudios</a></p>
+        </div>
 
         <!-- Optional: Contact Form -->
+        <!-- Uncomment this part when you have a valid form handler -->
+        <!-- 
         <div class="contact-form">
             <form action="submit_form.php" method="POST">
                 <label for="name">Name:</label>
@@ -44,6 +73,7 @@
                 <button type="submit">Send Message</button>
             </form>
         </div>
+        -->
     </main>
 </body>
 </html>
