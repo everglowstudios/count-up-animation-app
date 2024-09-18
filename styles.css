@@ -69,6 +69,8 @@ header {
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Limit the width to make paragraphs more readable */
+    margin: 0 auto; /* Center the container horizontally */
 }
 
 .home-container h1 {
@@ -77,6 +79,8 @@ header {
 
 .home-container p {
     font-size: 18px;
+    line-height: 1.6; /* Improve readability with increased line height */
+    margin-bottom: 20px; /* Space between paragraphs */
 }
 
 /* Contact Us Page */
@@ -152,6 +156,9 @@ header {
     .button {
         display: block;
         margin-bottom: 5px;
+    }
+    .home-container {
+        padding: 15px;
     }
     .contact-container {
         padding: 15px;
