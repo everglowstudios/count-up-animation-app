@@ -117,6 +117,41 @@ main {
     }
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    nav.main-nav {
+        flex-direction: column;
+    }
+    nav.main-nav a.button {
+        padding: 8px 16px;
+        margin: 3px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 30px;
+        height: 30px;
+    }
+    h1 {
+        font-size: 1.2em;
+    }
+    nav.main-nav a.button {
+        padding: 6px 12px;
+        margin: 2px 0;
+    }
+    .content-box {
+        padding: 15px;
+    }
+}
+
 /* Contact Us Page Styles */
 .contact-page {
     text-align: center;
