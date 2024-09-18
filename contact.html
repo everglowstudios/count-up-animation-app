@@ -5,32 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .contact-box {
-            width: 50%;
-            margin: 20px auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            background-color: #f9f9f9;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .contact-box p {
-            margin: 10px 0;
-            font-size: 18px;
-            color: #333;
-        }
-
-        .contact-box a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-
-        .contact-box a:hover {
-            text-decoration: underline;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -50,30 +24,32 @@
     </header>
 
     <main class="contact-page">
-        <h2>Contact Us</h2>
+        <!-- Contact Information Section -->
         <div class="contact-box">
+            <h2>Contact Us</h2>
             <p>Email: <a href="mailto:everglowstudios@proton.me">everglowstudios@proton.me</a></p>
-            <p>Instagram: <a href="https://www.instagram.com/everglowstudios" target="_blank">@everglowstudios</a></p>
+            <p>Instagram: <a href="https://instagram.com/everglowstudios" target="_blank">@everglowstudios</a></p>
         </div>
 
-        <!-- Optional: Contact Form -->
-        <!-- Uncomment this part when you have a valid form handler -->
-        <!-- 
-        <div class="contact-form">
-            <form action="submit_form.php" method="POST">
+        <!-- Contact Form Section -->
+        <form action="https://formspree.io/f/mpwaevej" method="POST">
+            <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
-                
+            </div>
+            
+            <div class="form-group">
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-                
+            </div>
+            
+            <div class="form-group">
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
-                
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-        -->
+            </div>
+            
+            <button type="submit">Send Message</button>
+        </form>
     </main>
 </body>
 </html>
