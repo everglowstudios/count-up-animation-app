@@ -75,92 +75,103 @@ main {
     padding: 80px 20px 20px; /* Adjusted padding to make space for fixed header */
     min-height: 100vh; /* Ensure full viewport height */
     display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
+    flex-direction: column; /* Ensure content flows vertically */
+    align-items: center; /* Center content horizontally */
 }
 
-/* Contact Page Styles */
-.contact-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    max-width: 800px;
-    width: 100%;
-}
-
-.contact-info, .contact-form {
-    background-color: rgba(0, 0, 0, 0.8); /* Black background with transparency */
+.content-box {
+    background-color: rgba(0, 0, 0, 0.8); /* Black background */
     padding: 20px;
     border-radius: 15px;
-    width: 100%; /* Ensure full width of container */
+    max-width: 800px;
     text-align: center;
+    margin: 20px; /* Add margin to prevent box from touching edges */
 }
 
-.contact-info a, .contact-form a {
-    color: #ffa500; /* Link color */
-    text-decoration: none;
+.content-box h2 {
+    font-size: 2em; /* Larger font size for desktop */
+    margin-bottom: 20px;
 }
 
-.contact-info a:hover, .contact-form a:hover {
-    text-decoration: underline;
+.content-box p {
+    font-size: 1.2em; /* Larger font size for desktop */
+    margin: 10px 0;
 }
 
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.contact-page .contact-info {
+    margin-bottom: 20px; /* Add spacing below contact info */
 }
 
-.form-group {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.contact-page .contact-form {
+    background-color: rgba(0, 0, 0, 0.8); /* Black background */
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 800px;
+    margin: 20px auto; /* Centered and spaced */
+    text-align: left; /* Align text to the left inside the form */
 }
 
-.form-group label {
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.form-group input, .form-group textarea {
+.contact-page .contact-form input,
+.contact-page .contact-form textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #555;
+    margin: 10px 0;
+    border: 1px solid #333;
     border-radius: 5px;
-    background-color: #333;
-    color: #fff;
 }
 
-button[type="submit"] {
+.contact-page .contact-form button {
     background-color: rgba(255, 165, 0, 0.9);
     color: #fff;
     border: none;
-    padding: 10px 20px;
     border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 10px;
     cursor: pointer;
-    font-weight: bold;
     transition: background-color 0.3s;
 }
 
-button[type="submit"]:hover {
+.contact-page .contact-form button:hover {
     background-color: rgba(255, 165, 0, 1);
 }
 
-/* Media Query for Mobile Devices */
-@media (max-width: 600px) {
-    .contact-container {
-        flex-direction: column;
+.terms-page .content-box {
+    margin: 20px; /* Add margin to prevent box from touching edges */
+}
+
+@media (max-width: 768px) {
+    .header-left {
+        flex-direction: column; /* Stack logo and title vertically on mobile */
         align-items: center;
     }
 
-    .contact-info, .contact-form {
-        width: 90%;
-        padding: 15px;
-        border-radius: 10px;
+    .logo img {
+        width: 40px; /* Smaller logo size for mobile */
+        height: 40px;
     }
 
-    .contact-form form {
-        gap: 10px;
+    h1 {
+        font-size: 1.5em; /* Smaller font size for mobile */
     }
+
+    nav.main-nav {
+        flex-direction: column; /* Stack buttons vertically on mobile */
+    }
+
+    nav.main-nav a.button {
+        margin: 5px 0;
+    }
+
+    .contact-page .contact-info,
+    .contact-page .contact-form {
+        margin: 0; /* Remove margin for full-width on mobile */
+        width: 100%; /* Full width on mobile */
+        box-sizing: border-box;
+    }
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
 }
