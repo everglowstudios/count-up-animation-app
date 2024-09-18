@@ -24,35 +24,27 @@
     </header>
 
     <main class="contact-page">
-        <div class="contact-container">
-            <div class="contact-info">
-                <div class="info-box">
-                    <h2>Contact Information</h2>
-                    <p>Email: <a href="mailto:everglowstudios@proton.me">everglowstudios@proton.me</a></p>
-                    <p>Instagram: <a href="https://instagram.com/everglowstudios" target="_blank">@everglowstudios</a></p>
+        <div class="content-box contact-info">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:everglowstudios@proton.me">everglowstudios@proton.me</a></p>
+            <p>Instagram: <a href="https://instagram.com/everglowstudios" target="_blank">@everglowstudios</a></p>
+        </div>
+        <div class="content-box contact-form">
+            <form action="https://formspree.io/f/mpwaevej" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
-            </div>
-            <div class="contact-form">
-                <h2>Send Us a Message</h2>
-                <form action="https://formspree.io/f/mpwaevej" method="POST">
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
         </div>
     </main>
 </body>
