@@ -1,164 +1,121 @@
-/* Global Styles */
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(-45deg, #2c2c2c, #1a1a1a, #2c2c2c, #1a1a1a);
-    background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
-    color: #fff;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Mobile Styles */
+        body {
+            font-size: 16px; /* Base font size for readability */
+        }
 
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center content horizontally */
-    padding: 20px;
-    background-color: #181818;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-}
+        .terms-page {
+            text-align: center;
+            padding: 10px;
+        }
 
-.header-left {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: center; /* Center items horizontally */
-    margin-bottom: 10px;
-}
+        .terms-page h2 {
+            font-size: 1.2em; /* Slightly smaller heading size */
+        }
 
-.logo-container {
-    display: flex;
-    align-items: center;
-}
+        .terms-page section {
+            max-width: 90%; /* Make sections responsive */
+            margin: 10px auto; /* Centered and spaced */
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.8); /* Black background */
+            border-radius: 10px;
+            text-align: left; /* Align text to the left inside boxes */
+        }
 
-.logo img {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-}
+        .terms-page a.button {
+            background-color: rgba(255, 165, 0, 0.9);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 12px; /* Adjust padding for mobile */
+            margin: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 3px 6px rgba(255, 165, 0, 0.4);
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
 
-h1 {
-    font-size: 2em;
-    margin: 0;
-}
+        .terms-page a.button:hover {
+            background-color: rgba(255, 165, 0, 1);
+            box-shadow: 0 4px 8px rgba(255, 165, 0, 0.6);
+        }
 
-nav.main-nav {
-    display: flex;
-    justify-content: center; /* Center buttons horizontally */
-    width: 100%;
-}
+        /* Media Query for Mobile Devices */
+        @media (max-width: 600px) {
+            .header-left {
+                flex-direction: column; /* Stack logo and title vertically */
+                align-items: center;
+            }
 
-nav.main-nav a.button {
-    background-color: rgba(255, 165, 0, 0.9);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    margin: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    box-shadow: 0 4px 8px rgba(255, 165, 0, 0.4);
-    transition: background-color 0.3s, box-shadow 0.3s;
-}
+            .logo img {
+                width: 40px; /* Smaller logo for mobile */
+                height: 40px;
+            }
 
-nav.main-nav a.button:hover {
-    background-color: rgba(255, 165, 0, 1);
-    box-shadow: 0 6px 12px rgba(255, 165, 0, 0.6);
-}
+            h1 {
+                font-size: 1.5em; /* Smaller heading for mobile */
+            }
 
-main {
-    padding: 80px 20px 20px; /* Adjusted padding to make space for fixed header */
-    min-height: 100vh; /* Ensure full viewport height */
-    display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-}
+            .terms-page section {
+                padding: 8px;
+            }
 
-/* Center content in the bottom bar */
-.home-page, .contact-page {
-    display: flex;
-    align-items: center; /* Center content vertically */
-    justify-content: center; /* Center content horizontally */
-    width: 100%;
-    min-height: calc(100vh - 80px); /* Adjust based on header height */
-}
+            .terms-page a.button {
+                padding: 6px 10px; /* Smaller button padding */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="logo.png" alt="Everglow Studios Logo">
+                </div>
+                <h1>Everglow Studios</h1>
+            </div>
+        </div>
+    </header>
 
-.content-box {
-    background-color: rgba(0, 0, 0, 0.8); /* Black background */
-    padding: 20px;
-    border-radius: 15px;
-    max-width: 800px;
-    text-align: center;
-    margin: 20px; /* Add margin to prevent box from touching edges */
-}
+    <main class="terms-page">
+        <h2>Terms and Conditions</h2>
+        <section>
+            <h3>1. Introduction</h3>
+            <p>Welcome to Everglow Studios! These terms and conditions outline the rules and regulations for the use of our website and services.</p>
+        </section>
 
-.content-box h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
+        <section>
+            <h3>2. Use of Our Service</h3>
+            <p>By accessing or using our website, you agree to comply with these terms. You must not use our services for any illegal or unauthorized purposes.</p>
+        </section>
 
-.content-box p {
-    font-size: 1.2em;
-    margin: 10px 0;
-}
+        <section>
+            <h3>3. User Responsibilities</h3>
+            <p>You are responsible for maintaining the confidentiality of your account and for all activities that occur under your account.</p>
+        </section>
 
-@keyframes gradientBG {
-    0% {
-        background-position: 0% 0%;
-    }
-    50% {
-        background-position: 100% 100%;
-    }
-    100% {
-        background-position: 0% 0%;
-    }
-}
+        <section>
+            <h3>4. Changes to Terms</h3>
+            <p>We may update these terms from time to time. We will notify you of any changes by posting the new terms on our website.</p>
+        </section>
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .logo img {
-        width: 40px;
-        height: 40px;
-    }
-    h1 {
-        font-size: 1.5em;
-    }
-    nav.main-nav {
-        flex-direction: column;
-    }
-    nav.main-nav a.button {
-        padding: 8px 16px;
-        margin: 3px;
-    }
-}
+        <section>
+            <h3>5. Contact Us</h3>
+            <p>If you have any questions or concerns about these terms, please contact us at <a href="mailto:everglowstudios@proton.me">everglowstudios@proton.me</a>.</p>
+        </section>
 
-@media (max-width: 480px) {
-    .logo img {
-        width: 30px;
-        height: 30px;
-    }
-    h1 {
-        font-size: 1.2em;
-    }
-    nav.main-nav a.button {
-        padding: 6px 12px;
-        margin: 2px 0;
-    }
-    .content-box {
-        padding: 15px;
-    }
-}
-
-/* Contact Us Page Styles */
-.contact-page {
-    text-align: center;
-}
-
-/* Terms and Conditions Page Styles */
-.terms-page {
-    text-align: center;
-    padding: 20px;
-}
+        <div class="buttons-container">
+            <a href="index.html" class="button">Home</a>
+            <a href="contact.html" class="button">Contact Us</a>
+        </div>
+    </main>
+</body>
+</html>
