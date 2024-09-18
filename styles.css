@@ -135,6 +135,59 @@ main {
     box-shadow: 0 6px 12px rgba(255, 165, 0, 0.6);
 }
 
+/* Contact Us Page Styles */
+.contact-page {
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-page h2 {
+    font-size: 2em; /* Larger font size for desktop */
+    margin-bottom: 20px;
+}
+
+.contact-page p {
+    font-size: 1.2em; /* Larger font size for desktop */
+    margin: 10px 0;
+}
+
+.contact-page .contact-form {
+    background-color: rgba(0, 0, 0, 0.8); /* Black background */
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 800px;
+    margin: 20px auto; /* Centered and spaced */
+    text-align: left; /* Align text to the left inside the form */
+}
+
+.contact-page .contact-form input,
+.contact-page .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+.contact-page .contact-form button {
+    background-color: rgba(255, 165, 0, 0.9);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(255, 165, 0, 0.4);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-page .contact-form button:hover {
+    background-color: rgba(255, 165, 0, 1);
+    box-shadow: 0 6px 12px rgba(255, 165, 0, 0.6);
+}
+
 /* Keyframes for gradient background animation */
 @keyframes gradientBG {
     0% {
@@ -193,5 +246,28 @@ main {
 
     .terms-page a.button {
         padding: 8px 16px; /* Smaller button padding */
+    }
+
+    .contact-page h2 {
+        font-size: 1.5em; /* Smaller heading for mobile */
+    }
+
+    .contact-page .contact-form {
+        padding: 10px; /* Reduced padding for mobile */
+        border-radius: 10px;
+    }
+
+    .contact-page .contact-form input,
+    .contact-page .contact-form textarea {
+        padding: 8px; /* Smaller padding for mobile */
+    }
+
+    .contact-page .contact-form button {
+        padding: 8px 16px; /* Smaller button padding for mobile */
+        margin: 10px 0;
+        /* Adjust button position slightly to the left */
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
 }
