@@ -14,7 +14,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center; /* Center content horizontally */
-    padding: 10px;
+    padding: 20px;
     background-color: #181818;
     position: fixed;
     width: 100%;
@@ -29,46 +29,72 @@ header {
     width: 100%;
     justify-content: center; /* Center items horizontally */
     margin-bottom: 10px;
-    flex-direction: column; /* Stack items vertically on mobile */
 }
 
 .logo-container {
     display: flex;
     align-items: center;
-    flex-direction: column; /* Stack logo and title vertically on mobile */
 }
 
 .logo img {
-    width: 40px; /* Adjusted size for mobile */
-    height: 40px;
+    width: 50px; /* Adjusted size for both desktop and mobile */
+    height: 50px;
+    margin-right: 10px;
 }
 
 h1 {
-    font-size: 1.5em; /* Adjusted size for mobile */
+    font-size: 2em; /* Larger font size for desktop */
     margin: 0;
 }
 
+nav.main-nav {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    width: 100%;
+}
+
+nav.main-nav a.button {
+    background-color: rgba(255, 165, 0, 0.9);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(255, 165, 0, 0.4);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+nav.main-nav a.button:hover {
+    background-color: rgba(255, 165, 0, 1);
+    box-shadow: 0 6px 12px rgba(255, 165, 0, 0.6);
+}
+
 main {
-    padding: 80px 10px 20px; /* Adjusted padding to make space for fixed header */
+    padding: 80px 20px 20px; /* Adjusted padding to make space for fixed header */
     min-height: 100vh; /* Ensure full viewport height */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
 }
 
 .terms-page {
     text-align: center;
-    padding: 10px;
+    padding: 20px;
 }
 
 .terms-page h2 {
-    font-size: 1.2em; /* Smaller heading size for mobile */
+    font-size: 2em; /* Larger font size for desktop */
     margin-bottom: 20px;
 }
 
 .terms-page section {
-    max-width: 90%; /* Make sections responsive */
-    margin: 10px auto; /* Centered and spaced */
-    padding: 10px;
     background-color: rgba(0, 0, 0, 0.8); /* Black background */
-    border-radius: 10px;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 800px;
+    margin: 20px auto; /* Centered and spaced */
     text-align: left; /* Align text to the left inside boxes */
 }
 
@@ -77,17 +103,17 @@ main {
     color: #fff;
     border: none;
     border-radius: 5px;
-    padding: 8px 12px; /* Adjust padding for mobile */
+    padding: 10px 20px;
     margin: 5px;
     text-decoration: none;
     font-weight: bold;
-    box-shadow: 0 3px 6px rgba(255, 165, 0, 0.4);
+    box-shadow: 0 4px 8px rgba(255, 165, 0, 0.4);
     transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .terms-page a.button:hover {
     background-color: rgba(255, 165, 0, 1);
-    box-shadow: 0 4px 8px rgba(255, 165, 0, 0.6);
+    box-shadow: 0 6px 12px rgba(255, 165, 0, 0.6);
 }
 
 /* Keyframes for gradient background animation */
@@ -106,7 +132,7 @@ main {
 /* Media Query for Mobile Devices */
 @media (max-width: 600px) {
     .header-left {
-        flex-direction: column; /* Stack logo and title vertically */
+        flex-direction: column; /* Stack logo and title vertically on mobile */
         align-items: center;
     }
 
@@ -119,11 +145,20 @@ main {
         font-size: 1.5em; /* Smaller heading for mobile */
     }
 
+    main {
+        padding: 80px 10px 20px; /* Adjusted padding to make space for fixed header */
+    }
+
+    .terms-page h2 {
+        font-size: 1.5em; /* Smaller heading for mobile */
+    }
+
     .terms-page section {
-        padding: 8px;
+        padding: 10px; /* Adjusted padding for mobile */
+        border-radius: 10px;
     }
 
     .terms-page a.button {
-        padding: 6px 10px; /* Smaller button padding */
+        padding: 8px 16px; /* Smaller button padding */
     }
 }
